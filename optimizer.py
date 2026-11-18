@@ -10,6 +10,5 @@ def average_mspt(samples):
 
 def overloaded(samples, budget_ms=50.0):
     """Return True if the *average* tick duration exceeds the budget."""
-    return average_mspt(samples) >= budget_ms
-    def test_just_over_budget(self):
-        self.assertTrue(overloaded([50.1]))
+    return average_mspt(samples) > budget_ms
+   
