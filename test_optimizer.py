@@ -19,6 +19,8 @@ class OptimizerTests(unittest.TestCase):
     def test_budget_boundary(self):
         self.assertFalse(overloaded([50, 50]))
 
+    def test_just_over_budget(self):
+        self.assertTrue(overloaded([50.1]))
 
 if __name__ == "__main__":
     unittest.main()
